@@ -1,0 +1,89 @@
+/***************************************************************************
+ * Copyright 2016 by HomeDirect - All rights reserved.                *    
+ **************************************************************************/
+package com.fsoft.template.service;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Optional;
+
+import org.apache.tomcat.jdbc.pool.DataSource;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
+import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.ImportResource;
+import org.springframework.context.annotation.PropertySource;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import com.fsoft.template.model.User;
+
+/**
+ *  Author : Nhu Dinh Thuan
+ *          Email:thuan.nhu@homedirect.com.vn
+ * Jan 18, 2018
+ */
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringBootTest
+@SpringBootApplication
+@ImportResource("classpath:application-config.xml")
+@PropertySource("classpath:application.properties")
+@EnableAutoConfiguration(exclude={
+    DataSourceAutoConfiguration.class,
+    JpaRepositoriesAutoConfiguration.class,
+    HibernateJpaAutoConfiguration.class,
+    DataSourceTransactionManagerAutoConfiguration.class,
+    org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration.class
+})
+public class TemplateServiceTest {
+  
+  final static Logger logger = LoggerFactory.getLogger(TemplateServiceTest.class);
+  
+  @Autowired
+  private UserService userService;
+  
+  @Autowired
+  private  DataSource dataSource;
+  
+  @Test
+  public void test() throws SQLException {
+	System.out.println(dataSource.getConnection().getMetaData().getTables(null, "MSIWEB", "user_test", null));
+	
+	Connection connection = dataSource.getConnection();
+	
+	ResultSet resultSet = connection.createStatement().executeQuery("select * from user_test");
+	System.out.println("---->" + resultSet.getInt(0));
+	  
+    assertNotNull(userService);
+    
+    User user = new User();
+    user.setUsername("test1");
+    user.setEmail("test1@gmail.com");
+    user.setFullname("Nguyen Van A");
+    user.setPhone("0981111213");
+    user.setPassword("123456");
+    
+    userService.registryUser(user);
+    
+    Optional<User> optional = userService.get(user.getUsername());
+    
+    assertTrue(optional.isPresent());
+    assertEquals(optional.get().getPhone(), user.getPhone());
+    
+    logger.info(" Email " + optional.get().getEmail());
+    
+  }
+}

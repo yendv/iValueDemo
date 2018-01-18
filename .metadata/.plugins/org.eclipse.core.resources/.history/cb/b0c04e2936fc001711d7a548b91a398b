@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package com.fsoft.template.model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+/**
+ * @author YenDV
+ *
+ */
+@Entity
+@Table(name="TEST_API", schema = "MSIWEB")
+public class TestApi {
+	@Id
+	@SequenceGenerator(name = "BC_BAO_CAO_ID_GENERATOR", sequenceName = "BC_BAO_CAO_SEQ", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "BC_BAO_CAO_ID_GENERATOR")
+	Long id;
+	
+	
+}

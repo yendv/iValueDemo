@@ -1,0 +1,4 @@
+com\fsoft\template\service\impl\UserServiceImpl.class
+com\fsoft\template\service\UserService.class
+com\fsoft\template\service\validator\UserStorageValidator.class
+com\fsoft\template\service\impl\AbstractServiceImpl.class

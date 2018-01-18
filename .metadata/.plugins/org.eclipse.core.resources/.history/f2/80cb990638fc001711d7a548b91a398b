@@ -1,0 +1,5 @@
+package com.fsoft.template.repository;
+
+public interface TestApiRespository {
+
+}

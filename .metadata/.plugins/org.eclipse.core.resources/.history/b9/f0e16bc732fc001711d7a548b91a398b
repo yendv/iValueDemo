@@ -1,0 +1,17 @@
+/**
+ * 
+ */
+package com.fsoft.template.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+/**
+ * @author YenDV
+ *
+ */
+@Entity
+@Table("MSIWEB.TEST_API")
+public class TestApi {
+	
+}

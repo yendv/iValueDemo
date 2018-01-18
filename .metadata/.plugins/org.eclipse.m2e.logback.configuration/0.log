@@ -1,0 +1,64 @@
+2018-01-18 10:57:16,449 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.fsoft.template:fsoft-template:1.0 @ D:\poc\template\api-with-db-sec\pom.xml.
+2018-01-18 10:57:22,163 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-internal-common:1.0 @ D:\poc\template\api-with-db-sec\template-internal-common\pom.xml.
+2018-01-18 10:57:23,458 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-internal-model:1.0 @ D:\poc\template\api-with-db-sec\template-internal-model\pom.xml.
+2018-01-18 10:57:25,229 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-internal-storage:1.0 @ D:\poc\template\api-with-db-sec\template-internal-storage\pom.xml.
+2018-01-18 10:57:27,416 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-internal-service:1.0 @ D:\poc\template\api-with-db-sec\template-internal-service\pom.xml.
+2018-01-18 10:57:29,172 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-frontend-model:1.0 @ D:\poc\template\api-with-db-sec\template-frontend-model\pom.xml.
+2018-01-18 10:57:30,111 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-frontend-api:1.0 @ D:\poc\template\api-with-db-sec\template-frontend-api\pom.xml.
+2018-01-18 10:57:36,289 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-common/src/main/java
+2018-01-18 10:57:36,289 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-common/src/test/java
+2018-01-18 10:57:36,809 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-model/src/main/java
+2018-01-18 10:57:36,809 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-model/src/test/java
+2018-01-18 10:57:37,826 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-storage/src/main/java
+2018-01-18 10:57:37,826 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-internal-storage/src/main/resources
+2018-01-18 10:57:37,858 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-internal-storage/src/main/resources
+2018-01-18 10:57:37,900 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-storage/src/test/java
+2018-01-18 10:57:37,900 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-internal-storage/src/test/resources
+2018-01-18 10:57:39,132 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-service/src/main/java
+2018-01-18 10:57:39,132 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-internal-service/src/main/resources
+2018-01-18 10:57:39,146 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-service/src/test/java
+2018-01-18 10:57:39,146 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-internal-service/src/test/resources
+2018-01-18 10:57:40,164 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-frontend-model/src/main/java
+2018-01-18 10:57:40,165 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-frontend-model/src/test/java
+2018-01-18 10:57:40,547 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-frontend-api/src/main/java
+2018-01-18 10:57:40,548 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-frontend-api/src/main/resources
+2018-01-18 10:57:40,554 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-frontend-api/src/main/resources
+2018-01-18 10:57:40,562 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-frontend-api/src/test/java
+2018-01-18 10:57:40,562 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-frontend-api/src/test/resources
+2018-01-18 10:57:41,587 [Worker-10] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 7 project(s) in 32 sec
+2018-01-18 10:58:54,198 [Worker-10] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2018-01-18 10:58:56,292 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.fsoft.template:fsoft-template:1.0 @ D:\poc\template\api-with-db-sec\pom.xml.
+2018-01-18 10:58:57,886 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-frontend-api:1.0 @ D:\poc\template\api-with-db-sec\template-frontend-api\pom.xml.
+2018-01-18 10:58:59,167 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-frontend-model:1.0 @ D:\poc\template\api-with-db-sec\template-frontend-model\pom.xml.
+2018-01-18 10:58:59,778 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-internal-common:1.0 @ D:\poc\template\api-with-db-sec\template-internal-common\pom.xml.
+2018-01-18 10:59:00,517 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-internal-model:1.0 @ D:\poc\template\api-with-db-sec\template-internal-model\pom.xml.
+2018-01-18 10:59:01,125 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-internal-service:1.0 @ D:\poc\template\api-with-db-sec\template-internal-service\pom.xml.
+2018-01-18 10:59:01,945 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-internal-storage:1.0 @ D:\poc\template\api-with-db-sec\template-internal-storage\pom.xml.
+2018-01-18 10:59:03,847 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-frontend-api/src/main/java
+2018-01-18 10:59:03,848 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-frontend-api/src/main/resources
+2018-01-18 10:59:03,848 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-frontend-api/src/main/resources
+2018-01-18 10:59:03,850 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-frontend-api/src/test/java
+2018-01-18 10:59:03,850 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-frontend-api/src/test/resources
+2018-01-18 10:59:04,209 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-frontend-model/src/main/java
+2018-01-18 10:59:04,210 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-frontend-model/src/test/java
+2018-01-18 10:59:04,335 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-common/src/main/java
+2018-01-18 10:59:04,336 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-common/src/test/java
+2018-01-18 10:59:04,433 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-model/src/main/java
+2018-01-18 10:59:04,433 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-model/src/test/java
+2018-01-18 10:59:04,612 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-service/src/main/java
+2018-01-18 10:59:04,612 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-internal-service/src/main/resources
+2018-01-18 10:59:04,612 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-service/src/test/java
+2018-01-18 10:59:04,612 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-internal-service/src/test/resources
+2018-01-18 10:59:04,880 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-storage/src/main/java
+2018-01-18 10:59:04,880 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-internal-storage/src/main/resources
+2018-01-18 10:59:04,880 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-internal-storage/src/main/resources
+2018-01-18 10:59:04,881 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /template-internal-storage/src/test/java
+2018-01-18 10:59:04,881 [Worker-10] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /template-internal-storage/src/test/resources
+2018-01-18 10:59:06,122 [Worker-10] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 11 sec
+2018-01-18 11:04:57,886 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.fsoft.template:fsoft-template:1.0 @ D:\poc\template\api-with-db-sec\pom.xml.
+2018-01-18 11:04:59,712 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-internal-model:1.0 @ D:\poc\template\api-with-db-sec\template-internal-model\pom.xml.
+2018-01-18 11:05:00,638 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-internal-storage:1.0 @ D:\poc\template\api-with-db-sec\template-internal-storage\pom.xml.
+2018-01-18 11:05:01,297 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-internal-service:1.0 @ D:\poc\template\api-with-db-sec\template-internal-service\pom.xml.
+2018-01-18 11:05:02,130 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-frontend-api:1.0 @ D:\poc\template\api-with-db-sec\template-frontend-api\pom.xml.
+2018-01-18 11:05:02,870 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-frontend-model:1.0 @ D:\poc\template\api-with-db-sec\template-frontend-model\pom.xml.
+2018-01-18 11:05:03,351 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.fsoft.template:template-internal-common:1.0 @ D:\poc\template\api-with-db-sec\template-internal-common\pom.xml.

@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.fsoft.template.service.validator;
+
+/**
+ * @author YenDV
+ *
+ */
+public class TestApiStorageValidator {
+
+}

@@ -1,0 +1,6 @@
+com\fsoft\template\front\transform\UserTransformer.class
+com\fsoft\template\ServerApplication.class
+com\fsoft\template\front\validator\UserRegistryInputValidator.class
+com\fsoft\template\front\controller\UserController.class
+com\fsoft\template\front\controller\AbstractController.class
+com\fsoft\template\front\gateway\AccountGateway.class

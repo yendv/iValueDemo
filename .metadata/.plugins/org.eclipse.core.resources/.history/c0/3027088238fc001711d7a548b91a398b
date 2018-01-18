@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.fsoft.template.service.impl;
+
+/**
+ * @author YenDV
+ *
+ */
+public class TestApiServiceImpl implements TestApiService {
+
+}

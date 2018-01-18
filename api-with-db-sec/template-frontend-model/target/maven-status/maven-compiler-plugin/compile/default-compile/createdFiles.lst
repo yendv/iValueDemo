@@ -1,0 +1,5 @@
+com\fsoft\template\response\LoggedUser.class
+com\fsoft\template\request\UserRegistryRequest.class
+com\fsoft\template\response\TemplateResponse.class
+com\fsoft\template\response\ResponseCode.class
+com\fsoft\template\request\LoginRequest.class
