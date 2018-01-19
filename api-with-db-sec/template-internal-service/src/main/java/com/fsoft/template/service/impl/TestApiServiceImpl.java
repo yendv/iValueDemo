@@ -3,6 +3,7 @@
  */
 package com.fsoft.template.service.impl;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.integration.annotation.MessageEndpoint;
@@ -25,5 +26,8 @@ public class TestApiServiceImpl extends AbstractServiceImpl<TestApi, String, Tes
 		return testApi;
 	}
 	
-	
+	@ServiceActivator(inputChannel = "test-api-get-all")
+	public List<TestApi> getAllData(){
+		return repo.findAll();
+	}
 }
