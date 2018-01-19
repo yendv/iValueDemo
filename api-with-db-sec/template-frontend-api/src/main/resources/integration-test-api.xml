@@ -17,12 +17,13 @@
 	</gateway>
 	
 	<!-- add, update  -->
-	<channel id="test-api-registry-channel-1-validate-input" />
-	<channel id="test-api-registry-channel-2-transform" />
-	<channel id="test-api-registry-channel-3-validate-storage" />
-	<channel id="test-api-registry-channel-4-service" />
+	<channel id="test-api-registry-channel-1-validate-input"/>
+	<channel id="test-api-registry-channel-2-transform"/>
+	<channel id="test-api-registry-channel-3-validate-storage"/>
+	<channel id="test-api-registry-channel-4-service"/>
 	
 	<channel id="test-api-get-all" />
+	<channel id="test-api-get-all-transform" />
 
 	
 </beans:beans>
