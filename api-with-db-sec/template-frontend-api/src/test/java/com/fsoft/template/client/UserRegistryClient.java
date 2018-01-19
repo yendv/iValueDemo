@@ -9,6 +9,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
+import com.fsoft.template.request.TestApiRequest;
 import com.fsoft.template.request.UserRegistryRequest;
 
 /**
@@ -22,16 +23,20 @@ public class UserRegistryClient {
     RestTemplate restTemplate = new RestTemplate();
     HttpHeaders httpHeaders = new HttpHeaders();
     
-    String url = "http://localhost:8080/iValue/user/registry";
+    String url = "http://localhost:8080/iValue/testapi/save";
     
-    UserRegistryRequest request = new UserRegistryRequest();
-    request.setUsername("test111");
-    request.setPassword("123456");
-    request.setRePassword("123456");
-    request.setEmail("vana@gmail.com");
-    request.setFullname("Nguyen Van A");
+//    UserRegistryRequest request = new UserRegistryRequest();
+//    request.setUsername("test111");
+//    request.setPassword("123456");
+//    request.setRePassword("123456");
+//    request.setEmail("vana@gmail.com");
+//    request.setFullname("Nguyen Van A");
+    TestApiRequest request = new TestApiRequest();
+    request.setId(2l);
+    request.setAge("12");
+    request.setName("test");
     
-    HttpEntity<UserRegistryRequest> entityWithBody = new HttpEntity<>(request, httpHeaders);
+    HttpEntity<TestApiRequest> entityWithBody = new HttpEntity<>(request, httpHeaders);
     ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.POST, entityWithBody, String.class);
     System.out.println(response.getBody());
     
