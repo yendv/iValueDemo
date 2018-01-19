@@ -20,7 +20,8 @@ import com.fsoft.template.response.ResponseCode;
 @MessageEndpoint
 public class UserRegistryInputValidator {
 
-  @ServiceActivator(inputChannel = "user-registry-channel-1-validate-input", outputChannel = "user-registry-channel-2-transform")
+  @ServiceActivator(inputChannel = "user-registry-channel-1-validate-input", 
+		  outputChannel = "user-registry-channel-2-transform")
   public UserRegistryRequest validate(UserRegistryRequest request) throws CommonException {
     if(StringUtils.isEmpty(request.getUsername())) {
       throw new CommonException(ResponseCode.EMPTY_DATA_ERROR, "username", ResponseCode.EMPTY_DATA_ERROR_DESCRIPTION);

@@ -15,7 +15,8 @@ public class UserTransformer {
   @Autowired
   private PasswordEncoder passwordEncoder;
 
-  @ServiceActivator(inputChannel = "user-registry-channel-2-transform", outputChannel = "user-registry-channel-3-validate-storage")
+  @ServiceActivator(inputChannel = "user-registry-channel-2-transform",
+		  outputChannel = "user-registry-channel-3-validate-storage")
   public User fromRequest(UserRegistryRequest request) {
     User user = new User();
     
