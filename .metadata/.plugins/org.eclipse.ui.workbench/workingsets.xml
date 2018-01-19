@@ -2,4 +2,5 @@
 <workingSetManager>
 <workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1516247828687_0" label="fsoft-template" name="fsoft-template"/>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1516248352818_1" label="Window Working Set" name="Aggregate for window 1516248352817"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1516335421626_2" label="Window Working Set" name="Aggregate for window 1516335421626"/>
 </workingSetManager>

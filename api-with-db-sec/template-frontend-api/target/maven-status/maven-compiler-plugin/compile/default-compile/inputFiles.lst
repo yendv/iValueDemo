@@ -1,6 +1,10 @@
 D:\poc\template\api-with-db-sec\template-frontend-api\src\main\java\com\fsoft\template\front\controller\AbstractController.java
+D:\poc\template\api-with-db-sec\template-frontend-api\src\main\java\com\fsoft\template\front\controller\TestApiRestController.java
 D:\poc\template\api-with-db-sec\template-frontend-api\src\main\java\com\fsoft\template\front\gateway\AccountGateway.java
 D:\poc\template\api-with-db-sec\template-frontend-api\src\main\java\com\fsoft\template\front\transform\UserTransformer.java
 D:\poc\template\api-with-db-sec\template-frontend-api\src\main\java\com\fsoft\template\front\validator\UserRegistryInputValidator.java
+D:\poc\template\api-with-db-sec\template-frontend-api\src\main\java\com\fsoft\template\front\transform\TestApiTransformer.java
 D:\poc\template\api-with-db-sec\template-frontend-api\src\main\java\com\fsoft\template\front\controller\UserController.java
+D:\poc\template\api-with-db-sec\template-frontend-api\src\main\java\com\fsoft\template\front\validator\TestApiInputValidator.java
 D:\poc\template\api-with-db-sec\template-frontend-api\src\main\java\com\fsoft\template\ServerApplication.java
+D:\poc\template\api-with-db-sec\template-frontend-api\src\main\java\com\fsoft\template\front\gateway\TestApiGateway.java

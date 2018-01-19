@@ -1,6 +1,10 @@
-com\fsoft\template\front\transform\UserTransformer.class
 com\fsoft\template\ServerApplication.class
+com\fsoft\template\front\transform\TestApiTransformer.class
+com\fsoft\template\front\validator\TestApiInputValidator.class
 com\fsoft\template\front\validator\UserRegistryInputValidator.class
 com\fsoft\template\front\controller\UserController.class
-com\fsoft\template\front\controller\AbstractController.class
 com\fsoft\template\front\gateway\AccountGateway.class
+com\fsoft\template\front\gateway\TestApiGateway.class
+com\fsoft\template\front\transform\UserTransformer.class
+com\fsoft\template\front\controller\TestApiRestController.class
+com\fsoft\template\front\controller\AbstractController.class

@@ -1,4 +1,7 @@
 D:\poc\template\api-with-db-sec\template-internal-service\src\main\java\com\fsoft\template\service\validator\UserStorageValidator.java
 D:\poc\template\api-with-db-sec\template-internal-service\src\main\java\com\fsoft\template\service\UserService.java
+D:\poc\template\api-with-db-sec\template-internal-service\src\main\java\com\fsoft\template\service\validator\TestApiStorageValidator.java
 D:\poc\template\api-with-db-sec\template-internal-service\src\main\java\com\fsoft\template\service\impl\AbstractServiceImpl.java
+D:\poc\template\api-with-db-sec\template-internal-service\src\main\java\com\fsoft\template\service\impl\TestApiServiceImpl.java
+D:\poc\template\api-with-db-sec\template-internal-service\src\main\java\com\fsoft\template\service\TestApiService.java
 D:\poc\template\api-with-db-sec\template-internal-service\src\main\java\com\fsoft\template\service\impl\UserServiceImpl.java

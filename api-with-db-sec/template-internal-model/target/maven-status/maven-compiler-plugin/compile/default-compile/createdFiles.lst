@@ -1,2 +1,3 @@
 com\fsoft\template\exception\CommonException.class
+com\fsoft\template\model\TestApi.class
 com\fsoft\template\model\User.class

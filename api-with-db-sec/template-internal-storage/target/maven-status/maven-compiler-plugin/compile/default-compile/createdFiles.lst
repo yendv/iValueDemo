@@ -1,4 +1,5 @@
+com\fsoft\template\repository\TestApiRespository.class
+com\fsoft\template\repository\UserRepository.class
 com\fsoft\template\repository\exception\RepositoryException.class
 com\fsoft\template\database\H2DatabaseConfiguration.class
-com\fsoft\template\repository\UserRepository.class
 com\fsoft\template\database\MySqlConfiguration.class
