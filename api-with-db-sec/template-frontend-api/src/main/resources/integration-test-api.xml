@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/integration"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/integration
+			http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+	<gateway id="testApiGateway" service-interface="com.fsoft.template.front.gateway.TestApiGateway"
+		default-reply-timeout="300000">
+
+		<method name="save" request-channel="test-api-registry-channel-1-validate-input"
+			request-timeout="300000" />
+			
+	</gateway>
+	
+	<!-- add, update  -->
+	<channel id="test-api-registry-channel-1-validate-input" />
+	<channel id="test-api-registry-channel-2-transform" />
+	<channel id="test-api-registry-channel-3-validate-storage" />
+	<channel id="test-api-registry-channel-4-service" />
+	
+
+	
+</beans:beans>
