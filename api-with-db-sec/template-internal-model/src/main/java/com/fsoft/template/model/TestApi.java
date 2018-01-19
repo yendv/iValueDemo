@@ -16,11 +16,11 @@ import javax.persistence.Table;
  *
  */
 @Entity
-@Table(name="TEST_API", schema = "MSIWEB")
+@Table(name="MSIWEB.TEST_API")
 public class TestApi {
 	@Id
-	@SequenceGenerator(name = "BC_BAO_CAO_ID_GENERATOR", sequenceName = "BC_BAO_CAO_SEQ", allocationSize = 1)
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "BC_BAO_CAO_ID_GENERATOR")
+	/*@SequenceGenerator(name = "BC_BAO_CAO_ID_GENERATOR", sequenceName = "BC_BAO_CAO_SEQ", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "BC_BAO_CAO_ID_GENERATOR")*/
 	private Long id;
 	
 	@Column(name="NAME")
