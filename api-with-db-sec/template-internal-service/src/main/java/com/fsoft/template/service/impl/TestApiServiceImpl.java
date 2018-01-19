@@ -18,7 +18,7 @@ import com.fsoft.template.service.TestApiService;
  *
  */
 @MessageEndpoint
-public class TestApiServiceImpl extends AbstractServiceImpl<TestApi, String, TestApiRespository>
+public class TestApiServiceImpl extends AbstractServiceImpl<TestApi, Long, TestApiRespository>
 								implements TestApiService {
 	@ServiceActivator(inputChannel = "test-api-registry-channel-4-service")
 	public TestApi saveTestApi(TestApi testApi){
@@ -26,7 +26,7 @@ public class TestApiServiceImpl extends AbstractServiceImpl<TestApi, String, Tes
 		return testApi;
 	}
 	
-	@ServiceActivator(inputChannel = "test-api-get-all")
+	@ServiceActivator(inputChannel = "test-api-get-all" , outputChannel = "test-api-get-all-transform")
 	public List<TestApi> getAllData(){
 		return repo.findAll();
 	}

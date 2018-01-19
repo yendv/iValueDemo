@@ -19,8 +19,8 @@ import javax.persistence.Table;
 @Table(name="MSIWEB.TEST_API")
 public class TestApi {
 	@Id
-	/*@SequenceGenerator(name = "BC_BAO_CAO_ID_GENERATOR", sequenceName = "BC_BAO_CAO_SEQ", allocationSize = 1)
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "BC_BAO_CAO_ID_GENERATOR")*/
+	@SequenceGenerator(name = "test_api_GENERATOR", sequenceName = "test_api_seq", allocationSize = 1)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "test_api_GENERATOR")
 	private Long id;
 	
 	@Column(name="NAME")

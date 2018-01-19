@@ -31,8 +31,7 @@ public class TestApiRestController extends AbstractController<TestApiGateway> {
 		}
 	}
 	
-	//@GetMapping("/testapi/getall")
-	@RequestMapping(name = "/testapi/getall" , method = RequestMethod.GET)
+	@GetMapping("/testapi/getall")
 	public @ResponseBody TemplateResponse<String> getAll(){
 		return toResult(gateway.getAll());
 	}

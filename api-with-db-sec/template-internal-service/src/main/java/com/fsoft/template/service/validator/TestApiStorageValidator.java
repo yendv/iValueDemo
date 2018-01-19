@@ -27,7 +27,7 @@ public class TestApiStorageValidator {
 	@ServiceActivator(inputChannel = "test-api-registry-channel-3-validate-storage",
 			outputChannel = "test-api-registry-channel-4-service")
 	public TestApi validate(TestApi testApi) throws CommonException{
-		Optional<TestApi> optinal = testService.get(testApi.getName());
+		Optional<TestApi> optinal = testService.get(testApi.getId());
 		//check exist
 		if(optinal.isPresent()){
 			throw new RepositoryException(RepositoryException.DUPLICATED_ERROR,
