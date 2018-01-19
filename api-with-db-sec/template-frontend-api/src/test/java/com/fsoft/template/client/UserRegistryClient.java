@@ -23,7 +23,7 @@ public class UserRegistryClient {
     RestTemplate restTemplate = new RestTemplate();
     HttpHeaders httpHeaders = new HttpHeaders();
     
-    String url = "http://localhost:8080/iValue/testapi/save";
+    String url = "http://localhost:8080/testapi/getall";
     
 //    UserRegistryRequest request = new UserRegistryRequest();
 //    request.setUsername("test111");
@@ -31,17 +31,21 @@ public class UserRegistryClient {
 //    request.setRePassword("123456");
 //    request.setEmail("vana@gmail.com");
 //    request.setFullname("Nguyen Van A");
-    TestApiRequest request = new TestApiRequest();
-    request.setId(2l);
-    request.setAge("12");
-    request.setName("test");
     
-    HttpEntity<TestApiRequest> entityWithBody = new HttpEntity<>(request, httpHeaders);
-    ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.POST, entityWithBody, String.class);
+    
+//    TestApiRequest request = new TestApiRequest();
+//    request.setId(2l);
+//    request.setAge("12");
+//    request.setName("test");
+//    
+    //HttpEntity<TestApiRequest> entityWithBody = new HttpEntity<>(request, httpHeaders);
+    
+    
+    ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, null, String.class);
     System.out.println(response.getBody());
     
    
-    response = restTemplate.exchange(url, HttpMethod.POST, entityWithBody, String.class);
+    //response = restTemplate.exchange(url, HttpMethod.POST, null, String.class);
     System.out.println(response.getBody());
   }
 }

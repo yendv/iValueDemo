@@ -19,6 +19,7 @@ import com.fsoft.template.response.ResponseCode;
  */
 @MessageEndpoint
 public class UserRegistryInputValidator {
+	
 
   @ServiceActivator(inputChannel = "user-registry-channel-1-validate-input", 
 		  outputChannel = "user-registry-channel-2-transform")

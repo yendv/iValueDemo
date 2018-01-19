@@ -9,8 +9,8 @@ import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
+//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+//import org.springframework.security.crypto.password.PasswordEncoder;
 
 @SpringBootApplication
 @ImportResource("classpath:application-config.xml")
@@ -26,10 +26,10 @@ public class ServerApplication extends SpringBootServletInitializer {
     return builder.sources(ServerApplication.class);
   }
   
-  @Bean
+ /* @Bean
   public PasswordEncoder passwordEncoder() {
       return new BCryptPasswordEncoder();
-  }
+  }*/
   
   public static void main(String[] args) {
     SpringApplication.run(ServerApplication.class, args);
