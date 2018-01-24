@@ -22,8 +22,10 @@
 	
 	<context:component-scan base-package="com.fsoft.template.front.controller" />
 
+	<!-- <import resource="order-basic-infomation.xml"/> -->
 	<import resource="integration-account.xml" />
 	<import resource="integration-test-api.xml" />
+	
 	
 	<bean class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
 	

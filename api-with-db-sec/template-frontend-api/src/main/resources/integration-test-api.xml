@@ -12,18 +12,17 @@
 		<method name="save" request-channel="test-api-registry-channel-1-validate-input"
 			request-timeout="300000" />
 			
-		<method name="getAll" request-channel="test-api-get-all"
+		<method name="getAll" request-channel="test-api-list-all"
 			request-timeout="300000" />
 	</gateway>
 	
 	<!-- add, update  -->
-	<channel id="test-api-registry-channel-1-validate-input"/>
-	<channel id="test-api-registry-channel-2-transform"/>
-	<channel id="test-api-registry-channel-3-validate-storage"/>
-	<channel id="test-api-registry-channel-4-service"/>
+	<channel id="test-api-registry-channel-1-validate-input" />
+	<channel id="test-api-registry-channel-2-transform" />
+	<channel id="test-api-registry-channel-3-validate-storage" />
+	<channel id="test-api-registry-channel-4-service" />
 	
-	<channel id="test-api-get-all" />
-	<channel id="test-api-get-all-transform" />
-
+	<channel id="test-api-list-all" />
+	<channel id="test-api-list-all-result" />
 	
 </beans:beans>
