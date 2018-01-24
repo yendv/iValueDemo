@@ -16,8 +16,9 @@ public class UserServiceImpl extends AbstractServiceImpl<User, String, UserRepos
 
 	@ServiceActivator(inputChannel = "user-registry-channel-4-service")
 	public String registryUser(User user) {
-		repo.save(user);
-		return user.getUsername();
+		//repo.save(user);
+		repo.updatetest(user.getPhone(), user.getUsername());
+		return user.getPhone();
 	}
 
 	@ServiceActivator(inputChannel = "login-channel-4-service")

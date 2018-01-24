@@ -29,6 +29,7 @@ import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import com.fsoft.template.model.Coupon;
 import com.fsoft.template.model.User;
 
 /**
@@ -56,7 +57,12 @@ public class TemplateServiceTest {
   private UserService userService;
   
   @Autowired
-  private  DataSource dataSource;
+  private CouponService couponService;
+  
+  
+  
+ /* @Autowired
+  private  DataSource dataSource;*/
   
   @Test
   public void test()  {
@@ -71,23 +77,35 @@ public class TemplateServiceTest {
 //		  e.printStackTrace();
 //	}
 	  
-    assertNotNull(userService);
+   /* assertNotNull(couponService);
     
     User user = new User();
-    user.setUsername("test1");
-    user.setEmail("test1@gmail.com");
-    user.setFullname("Nguyen Van A");
-    user.setPhone("0981111213");
+    user.setUsername("yendv1");
+    user.setEmail("yendv1@gmail.com");
+    user.setFullname("yendv");
+    user.setPhone("0965533329");
     user.setPassword("123456");
     
     userService.registryUser(user);
+    System.err.println(user.getFullname());
     
     Optional<User> optional = userService.get(user.getUsername());
     
     assertTrue(optional.isPresent());
-    assertEquals(optional.get().getPhone(), user.getPhone());
+    assertEquals(optional.get().getPhone(), user.getPhone());*/
     
-    logger.info(" Email " + optional.get().getEmail());
+    
+    Coupon c = new Coupon();
+    java.sql.Date date = new java.sql.Date(new java.util.Date().getTime());
+    try {
+    	couponService.orderBasicUpdateQuery("000000000000000", 
+        		"0000000orderId", date,
+        		"000000000mdfId", null,
+        		"000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000test");
+	} catch (Exception e) {
+		logger.info(e.getMessage());
+	}
+    System.err.println("hhiihiihhihihihih");
     
   }
 }
