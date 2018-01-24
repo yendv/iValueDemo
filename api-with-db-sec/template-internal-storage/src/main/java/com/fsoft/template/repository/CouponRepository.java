@@ -11,12 +11,13 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import com.fsoft.template.model.Coupon;
+import com.fsoft.template.model.CouponPK;
 
 /**
  * @author YenDV
  *
  */
-public interface CouponRepository extends JpaRepository<Coupon, String> {
+public interface CouponRepository extends JpaRepository<Coupon, CouponPK> {
 	@Transactional
 	@Modifying
 	@Query("UPDATE Coupon " + 

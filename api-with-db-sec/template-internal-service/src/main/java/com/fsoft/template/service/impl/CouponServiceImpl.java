@@ -8,6 +8,8 @@ import java.sql.Date;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.integration.annotation.MessageEndpoint;
 
@@ -22,17 +24,20 @@ import com.fsoft.template.service.TemplateServiceTest;
  */
 
 @MessageEndpoint
-public class CouponServiceImpl extends AbstractServiceImpl<Coupon, String, CouponRepository>
+public class CouponServiceImpl 
 	implements CouponService {
 	final static Logger logger = LoggerFactory.getLogger(CouponServiceImpl.class);
 	
-	@Override
+	@Autowired
+	protected Environment env;
+	@Autowired
+	CouponRepository repo;
+	
 	public Integer orderBasicUpdateQuery(String customerId, String orderId, Date orderDate, String mdfId, String mdfDtm,
 			String couponIssueNumber) {
 		System.err.println("mdfId " + mdfId);
 		System.err.println("id " + customerId);
 		logger.info(repo.orderBasicUpdateQuery(orderId, mdfId ,customerId).toString());
-		repo.orderBasicUpdateQuery(orderId, mdfId ,customerId);
 		return null;
 	}
 	
