@@ -77,35 +77,34 @@ public class TemplateServiceTest {
 //		  e.printStackTrace();
 //	}
 	  
-   /* assertNotNull(couponService);
+   assertNotNull(couponService);
     
-    User user = new User();
+ /* User user = new User();
     user.setUsername("yendv1");
     user.setEmail("yendv1@gmail.com");
     user.setFullname("yendv");
-    user.setPhone("0965533329");
+    user.setPhone("096553332912313123");
     user.setPassword("123456");
     
     userService.registryUser(user);
-    System.err.println(user.getFullname());
+    System.err.println(user.getFullname());*/
     
-    Optional<User> optional = userService.get(user.getUsername());
+    /*Optional<User> optional = userService.get(user.getUsername());
     
     assertTrue(optional.isPresent());
     assertEquals(optional.get().getPhone(), user.getPhone());*/
     
     
-    Coupon c = new Coupon();
+   Coupon c = new Coupon();
     java.sql.Date date = new java.sql.Date(new java.util.Date().getTime());
     try {
-    	couponService.orderBasicUpdateQuery("000000000000000", 
+    	/*couponService.orderBasicUpdateQuery("000000000000000",
         		"0000000orderId", date,
         		"000000000mdfId", null,
-        		"000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000test");
+        		"000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000test");*/
 	} catch (Exception e) {
-		logger.info(e.getMessage());
+		e.printStackTrace();
 	}
     System.err.println("hhiihiihhihihihih");
-    
   }
 }

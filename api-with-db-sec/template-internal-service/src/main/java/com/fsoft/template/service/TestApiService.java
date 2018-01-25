@@ -12,7 +12,8 @@ import com.fsoft.template.model.TestApi;
  *
  */
 public interface TestApiService {
-	public Optional<TestApi> get(Long id);
+  
+	public Optional<TestApi> get(String name);
 	
 	public TestApi saveTestApi(TestApi testApi);
 	

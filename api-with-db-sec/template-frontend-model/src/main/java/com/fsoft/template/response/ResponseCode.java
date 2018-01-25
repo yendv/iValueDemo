@@ -22,6 +22,10 @@ public class ResponseCode {
 
   public static final String EMPTY_DATA_ERROR_DESCRIPTION = "Data is empty!";
   
+  public static final int TYPE_DATA_ERROR = 03;
+
+  public static final String TYPE_DATA_ERROR_DESCRIPTION = "Type is empty!";
+  
   public static final int USER_REGISTRY_NOT_MATCHED_PASSWORD_ERROR = 12;
 
   public static final String USER_REGISTRY_NOT_MATCHED_PASSWORD_ERROR_DESCRIPTION = "Password Not Match!";

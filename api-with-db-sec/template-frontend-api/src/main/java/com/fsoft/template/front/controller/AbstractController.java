@@ -7,11 +7,7 @@ import com.fsoft.template.exception.CommonException;
 import com.fsoft.template.response.ResponseCode;
 import com.fsoft.template.response.TemplateResponse;
 
-/**
- * Author: Thuan.Nhu
- *    Email: nhudinhthuan@gmail.com
- * Dec 28, 2016
- */
+
 public abstract class AbstractController<S> {
 
   protected final Logger LOGGER;

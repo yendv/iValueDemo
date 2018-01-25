@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/integration"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans.xsd
+			http://www.springframework.org/schema/integration
+			http://www.springframework.org/schema/integration/spring-integration.xsd">
+
+	<gateway id="accountGateway" service-interface="com.fsoft.template.front.gateway.OrderBasicInfomationGateway"
+		default-reply-timeout="300000">
+
+		<method name="registryOrderBasicProcessing" request-channel="rOrdBsPc-registry-channel-1-validate-input"
+			request-timeout="300000" />
+	</gateway>
+	
+	<!-- registryOrderBasicProcessing -->
+	<channel id="rOrdBsPc-update-channel-1-validate-input" />
+	<channel id="rOrdBsPc-update-channel-2-transform" />
+	<channel id="rOrdBsPc-update-channel-3-service" />
+	<channel id="rOrdBsPc-update-channel-4-validate-storage" />
+	
+	
+</beans:beans>

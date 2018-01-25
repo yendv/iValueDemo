@@ -8,7 +8,7 @@ package com.fsoft.template.request;
  *
  */
 public class TestApiRequest {
-	//private Long id;
+  
 	private String name;
 	private String age;
 	
@@ -17,7 +17,6 @@ public class TestApiRequest {
 	 */
 	public TestApiRequest() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
@@ -25,12 +24,12 @@ public class TestApiRequest {
 	 * @param name
 	 * @param age
 	 */
-	public TestApiRequest(Long id, String name, String age) {
+	public TestApiRequest(String name, String age) {
 		super();
-		//this.id = id;
 		this.name = name;
 		this.age = age;
 	}
+
 
 	/**
 	 * @return the name

@@ -10,6 +10,8 @@ import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import javax.persistence.TemporalType;
+
 
 
 /**
@@ -70,8 +72,9 @@ public class Coupon  implements Serializable {
 	@Column(name = "MDF_ID")
 	private String mdfId;//Modifier
 	
-	@Column(name = "MDF_DTM")
-	private String mdfDtm;//Modify Date
+	@javax.persistence.Temporal(TemporalType.DATE)
+	@Column(name="MDF_DTM")
+	private java.util.Date mdfDtm;//Modify Date
 	
 	@Column(name = "ISD_CPN_PRT_NO")
 	private String isdCpnPrtNo;//Internal Coupon Issue Number
@@ -275,14 +278,14 @@ public class Coupon  implements Serializable {
 	/**
 	 * @return the mdfDtm
 	 */
-	public String getMdfDtm() {
+	public java.util.Date getMdfDtm() {
 		return mdfDtm;
 	}
 
 	/**
 	 * @param mdfDtm the mdfDtm to set
 	 */
-	public void setMdfDtm(String mdfDtm) {
+	public void setMdfDtm(java.util.Date mdfDtm) {
 		this.mdfDtm = mdfDtm;
 	}
 

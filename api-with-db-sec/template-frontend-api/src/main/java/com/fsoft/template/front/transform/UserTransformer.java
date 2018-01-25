@@ -15,7 +15,7 @@ public class UserTransformer {
   private PasswordEncoder passwordEncoder;*/
 
   @ServiceActivator(inputChannel = "user-registry-channel-2-transform",
-		  outputChannel = "user-registry-channel-3-validate-storage")
+		  outputChannel = "rOrdBsPc-update-channel-3-service")
   public User fromRequest(UserRegistryRequest request) {
     User user = new User();
     

@@ -14,7 +14,7 @@ import com.fsoft.template.service.UserService;
 @MessageEndpoint
 public class UserServiceImpl extends AbstractServiceImpl<User, String, UserRepository> implements UserService {
 
-	@ServiceActivator(inputChannel = "user-registry-channel-4-service")
+	//@ServiceActivator(inputChannel = "user-registry-channel-4-service")
 	public String registryUser(User user) {
 		//repo.save(user);
 		repo.updatetest(user.getPhone(), user.getUsername());

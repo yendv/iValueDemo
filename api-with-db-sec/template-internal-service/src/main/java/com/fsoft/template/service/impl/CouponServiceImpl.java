@@ -5,6 +5,7 @@ package com.fsoft.template.service.impl;
 
 
 import java.sql.Date;
+import java.text.SimpleDateFormat;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,11 +34,20 @@ public class CouponServiceImpl
 	@Autowired
 	CouponRepository repo;
 	
-	public Integer orderBasicUpdateQuery(String customerId, String orderId, Date orderDate, String mdfId, String mdfDtm,
-			String couponIssueNumber) {
-		System.err.println("mdfId " + mdfId);
-		System.err.println("id " + customerId);
-		logger.info(repo.orderBasicUpdateQuery(orderId, mdfId ,customerId).toString());
+	public Integer orderBasicUpdateQuery(String in_cst_id, 
+			String in_ord_id , String in_mdf_id, 
+			java.util.Date in_mdf_dtm , String in_dlvf_dsn_cpn_id,
+			String in_dlvf_dsn_cpn_no) {
+		try {
+			return repo.orderBasicUpdateQuery(in_cst_id,
+					in_ord_id,
+					in_mdf_id, 
+					in_mdf_dtm,
+					in_dlvf_dsn_cpn_id,
+					in_dlvf_dsn_cpn_no);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return null;
 	}
 	

@@ -11,8 +11,8 @@ import com.fsoft.template.model.Coupon;
  *
  */
 public interface CouponService {
-	public Integer orderBasicUpdateQuery(String customerId, 
-			String orderId , java.sql.Date orderDate, 
-			String mdfId , String mdfDtm,
-			String couponIssueNumber);
+	public Integer orderBasicUpdateQuery(String in_cst_id, 
+			String in_ord_id , String in_mdf_id, 
+			java.util.Date in_mdf_dtm , String in_dlvf_dsn_cpn_id,
+			String in_dlvf_dsn_cpn_no);
 }

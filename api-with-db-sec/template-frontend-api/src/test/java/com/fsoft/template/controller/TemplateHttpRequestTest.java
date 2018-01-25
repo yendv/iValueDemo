@@ -1,4 +1,4 @@
-package com.fsoft.template.controller;
+/*package com.fsoft.template.controller;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Before;
@@ -82,4 +82,4 @@ public class TemplateHttpRequestTest {
       logger.info("--->" + actions.andReturn().getResponse().getContentAsString());
       actions.andExpect(ok);
     }
-}
+}*/
