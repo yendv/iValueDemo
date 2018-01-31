@@ -3,4 +3,7 @@ D:\poc\template\api-with-db-sec\template-frontend-model\src\main\java\com\fsoft\
 D:\poc\template\api-with-db-sec\template-frontend-model\src\main\java\com\fsoft\template\response\TemplateResponse.java
 D:\poc\template\api-with-db-sec\template-frontend-model\src\main\java\com\fsoft\template\request\TestApiRequest.java
 D:\poc\template\api-with-db-sec\template-frontend-model\src\main\java\com\fsoft\template\response\LoggedUser.java
+D:\poc\template\api-with-db-sec\template-frontend-model\src\main\java\com\fsoft\template\response\OrderBasicInfomationResponse.java
 D:\poc\template\api-with-db-sec\template-frontend-model\src\main\java\com\fsoft\template\response\ResponseCode.java
+D:\poc\template\api-with-db-sec\template-frontend-model\src\main\java\com\fsoft\template\request\OrderBasicInfomationRequest.java
+D:\poc\template\api-with-db-sec\template-frontend-model\src\main\java\com\fsoft\template\response\TestApiResponse.java

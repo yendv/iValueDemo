@@ -1,5 +1,10 @@
+D:\poc\template\api-with-db-sec\template-internal-storage\src\main\java\com\fsoft\template\repository\OrderResponsitory.java
 D:\poc\template\api-with-db-sec\template-internal-storage\src\main\java\com\fsoft\template\repository\TestApiRespository.java
+D:\poc\template\api-with-db-sec\template-internal-storage\src\main\java\com\fsoft\template\repository\OrderBasicReponsitory.java
+D:\poc\template\api-with-db-sec\template-internal-storage\src\main\java\com\fsoft\template\repository\OrderDetailReponsitory.java
 D:\poc\template\api-with-db-sec\template-internal-storage\src\main\java\com\fsoft\template\database\MySqlConfiguration.java
+D:\poc\template\api-with-db-sec\template-internal-storage\src\main\java\com\fsoft\template\repository\CouponRepository.java
 D:\poc\template\api-with-db-sec\template-internal-storage\src\main\java\com\fsoft\template\repository\UserRepository.java
+D:\poc\template\api-with-db-sec\template-internal-storage\src\main\java\com\fsoft\template\repository\OrderDiscountRespository.java
 D:\poc\template\api-with-db-sec\template-internal-storage\src\main\java\com\fsoft\template\database\H2DatabaseConfiguration.java
 D:\poc\template\api-with-db-sec\template-internal-storage\src\main\java\com\fsoft\template\repository\exception\RepositoryException.java

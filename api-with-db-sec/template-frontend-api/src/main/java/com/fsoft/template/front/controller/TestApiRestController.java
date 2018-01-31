@@ -5,6 +5,7 @@ package com.fsoft.template.front.controller;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +24,7 @@ import com.fsoft.template.response.TestApiResponse;
  * @author YenDV
  *
  */
+
 @RestController()
 public class TestApiRestController extends AbstractController<TestApiGateway> {
   
@@ -36,6 +38,7 @@ public class TestApiRestController extends AbstractController<TestApiGateway> {
 	}
 	
 	//@GetMapping("/testapi/getall")
+	@CrossOrigin(origins = "http://localhost:8080", maxAge = 3600)
 	@RequestMapping(name = "/testapi/list" , method = RequestMethod.GET)
 	public @ResponseBody TemplateResponse<List<TestApiResponse>> getAll(@RequestParam (required = false) String filter) {
 		return toResult(gateway.getAll(org.springframework.util.StringUtils.isEmpty(filter) ? "all" : filter));

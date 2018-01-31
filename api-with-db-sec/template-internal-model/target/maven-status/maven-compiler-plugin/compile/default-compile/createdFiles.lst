@@ -1,3 +1,12 @@
 com\fsoft\template\exception\CommonException.class
+com\fsoft\template\model\OrderPK.class
+com\fsoft\template\model\OrderBasic.class
+com\fsoft\template\model\Coupon.class
+com\fsoft\template\model\CouponPK.class
+com\fsoft\template\model\OrderDiscount.class
+com\fsoft\template\model\Order.class
+com\fsoft\template\model\OrderDetail.class
+com\fsoft\template\model\OrderDiscountPK.class
+com\fsoft\template\model\OrderDetailPK.class
 com\fsoft\template\model\TestApi.class
 com\fsoft\template\model\User.class

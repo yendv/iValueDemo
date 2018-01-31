@@ -33,6 +33,35 @@ public class OrderBasicInfomationRequest {
 	private String in_inst_dtm;//modifierId
 	private String in_mdf_id;//modifyDate
 	private String in_mdf_dtm;
+	private String in_amt_pn_cll_amt;
+	
+	private String in_amt_pn_otk_amt;
+	
+	
+	/**
+	 * @return the in_amt_pn_otk_amt
+	 */
+	public String getIn_amt_pn_otk_amt() {
+		return in_amt_pn_otk_amt;
+	}
+	/**
+	 * @param in_amt_pn_otk_amt the in_amt_pn_otk_amt to set
+	 */
+	public void setIn_amt_pn_otk_amt(String in_amt_pn_otk_amt) {
+		this.in_amt_pn_otk_amt = in_amt_pn_otk_amt;
+	}
+	/**
+	 * @return the in_amt_pn_cll_amt
+	 */
+	public String getIn_amt_pn_cll_amt() {
+		return in_amt_pn_cll_amt;
+	}
+	/**
+	 * @param in_amt_pn_cll_amt the in_amt_pn_cll_amt to set
+	 */
+	public void setIn_amt_pn_cll_amt(String in_amt_pn_cll_amt) {
+		this.in_amt_pn_cll_amt = in_amt_pn_cll_amt;
+	}
 	/**
 	 * @return the in_ord_id
 	 */

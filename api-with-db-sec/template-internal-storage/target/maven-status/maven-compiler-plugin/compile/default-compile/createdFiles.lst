@@ -1,5 +1,10 @@
 com\fsoft\template\repository\TestApiRespository.class
 com\fsoft\template\repository\UserRepository.class
+com\fsoft\template\repository\OrderDetailReponsitory.class
+com\fsoft\template\repository\OrderDiscountRespository.class
+com\fsoft\template\repository\OrderResponsitory.class
 com\fsoft\template\repository\exception\RepositoryException.class
 com\fsoft\template\database\H2DatabaseConfiguration.class
+com\fsoft\template\repository\CouponRepository.class
+com\fsoft\template\repository\OrderBasicReponsitory.class
 com\fsoft\template\database\MySqlConfiguration.class

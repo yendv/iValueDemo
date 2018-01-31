@@ -23,7 +23,7 @@
 
 	<import resource="integration-account.xml" />
 	<import resource="integration-test-api.xml" />
-	<!-- <import resource="order-basic-infomation.xml"/> -->
+	<import resource="intergration-order-basic-infomation.xml"/>
 	
 	<bean scope="singleton" id="messageSource"
 		  class="org.springframework.context.support.ResourceBundleMessageSource">

@@ -14,23 +14,19 @@
 
 
 	<context:component-scan base-package="com.fsoft.template.database" />
-	<context:component-scan base-package="com.fsoft.template.service.validator"/>
-	<context:component-scan base-package="com.fsoft.template.service.impl"/>
-	
+	<context:component-scan base-package="com.fsoft.template.service.validator" />
+	<context:component-scan base-package="com.fsoft.template.service.impl" />
 	<context:component-scan base-package="com.fsoft.template.front.validator" />
 	<context:component-scan base-package="com.fsoft.template.front.transform" />
 	
 	<context:component-scan base-package="com.fsoft.template.front.controller" />
 
-	<!-- <import resource="order-basic-infomation.xml"/> -->
 	<import resource="integration-account.xml" />
 	<import resource="integration-test-api.xml" />
-	
-	
-	<bean class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+	<import resource="intergration-order-basic-infomation.xml"/>
 	
 	<bean scope="singleton" id="messageSource"
-		class="org.springframework.context.support.ResourceBundleMessageSource">
+		  class="org.springframework.context.support.ResourceBundleMessageSource">
 		<property name="basename" value="messages" />
 	</bean>
 

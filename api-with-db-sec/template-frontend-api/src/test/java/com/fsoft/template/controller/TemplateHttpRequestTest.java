@@ -1,4 +1,4 @@
-/*package com.fsoft.template.controller;
+package com.fsoft.template.controller;
 import static org.junit.Assert.assertNotNull;
 
 import org.junit.Before;
@@ -31,7 +31,7 @@ import org.springframework.web.context.WebApplicationContext;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fsoft.template.request.UserRegistryRequest;
 
-@RunWith(SpringJUnit4ClassRunner.class)
+/*@RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
 @WebAppConfiguration
 @ImportResource("classpath:application-config.xml")

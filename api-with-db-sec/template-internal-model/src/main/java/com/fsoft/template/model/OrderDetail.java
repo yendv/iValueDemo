@@ -6,15 +6,17 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 
-
+/**
+ * The persistent class for the ORD_ORD_DTL_D database table.
+ * 
+ */
 @Entity
-@Table(name="ORD_ORD_DTL_D")
+@Table(name="GSHS.ORD_ORD_DTL_D")
 public class OrderDetail implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
-	@Id
-	@Column(name="ORD_ID")
-	private String ordId;
+
+	@EmbeddedId
+	private OrderDetailPK id;
 
 	@Column(name="AR_DCLS_ID")
 	private String arDclsId;
@@ -418,6 +420,14 @@ public class OrderDetail implements Serializable {
 	private String untSeq;
 
 	public OrderDetail() {
+	}
+
+	public OrderDetailPK getId() {
+		return this.id;
+	}
+
+	public void setId(OrderDetailPK id) {
+		this.id = id;
 	}
 
 	public String getArDclsId() {

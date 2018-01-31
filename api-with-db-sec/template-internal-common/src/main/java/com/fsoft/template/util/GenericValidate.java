@@ -10,16 +10,22 @@ import org.springframework.util.StringUtils;
  *
  */
 public class GenericValidate {
-	private static final String  dateRegex = "d{4}-\\d{2}-\\d{2}";
+	private static final String  dateRegex = "([0-9]{2})/([0-9]{2})/([0-9]{4})";
 	private static final String longRegex = "^-?\\d{1,19}$";
+	private static final String bigDecimalRegex = "-?(?:\\d+(?:\\.\\d+)?|\\.\\d+)";
 	
 	public static Boolean validateDate(String dateStr){
 		return StringUtils.isEmpty(dateStr) ? 
-							false :  dateStr.trim().matches(dateRegex) ? true : false;
+							false :  dateStr.trim().matches(dateRegex) ;
 	}
 	
 	public static Boolean validateLong(String longStr){
 		return StringUtils.isEmpty(longStr) ? 
-							false :  longStr.trim().matches(longRegex) ? true : false;
+							false :  longStr.trim().matches(longRegex);
+	}
+	
+	public static Boolean validateBigDecimal(String longStr){
+		return StringUtils.isEmpty(longStr) ? 
+							false :  longStr.trim().matches(bigDecimalRegex);
 	}
 }

@@ -1,4 +1,7 @@
-/*package com.fsoft.template.controller;
+/***************************************************************************
+ * Copyright 2016 by HomeDirect - All rights reserved.                *    
+ **************************************************************************/
+package com.fsoft.template.controller;
 
 import static org.junit.Assert.assertNotNull;
 
@@ -23,7 +26,11 @@ import com.fsoft.template.request.LoginRequest;
 import com.fsoft.template.request.UserRegistryRequest;
 import com.fsoft.template.response.TemplateResponse;
 
-
+/**
+ *  Author : Nhu Dinh Thuan
+ *          Email:thuan.nhu@homedirect.com.vn
+ * Jan 18, 2018
+ */
 //@RunWith(SpringJUnit4ClassRunner.class)
 //@SpringBootTest
 //@SpringBootApplication
@@ -36,6 +43,9 @@ import com.fsoft.template.response.TemplateResponse;
 //    DataSourceTransactionManagerAutoConfiguration.class,
 //    org.springframework.boot.autoconfigure.security.SecurityAutoConfiguration.class
 //})
+
+
+/*
 public class TemplateControllerTest {
 
   final static Logger logger = LoggerFactory.getLogger(TemplateControllerTest.class);
@@ -62,4 +72,5 @@ public class TemplateControllerTest {
     logger.info(response.getCode() + " : " + response.getDescription());
   }
 }
+
 */

@@ -20,7 +20,7 @@ public class OrderBasicInfomationValidator {
 	@ServiceActivator(inputChannel = "rOrdBsPc-update-channel-1-validate-input" , 
 			outputChannel = "rOrdBsPc-update-channel-2-transform")
 	public OrderBasicInfomationRequest validate(OrderBasicInfomationRequest request) throws CommonException{
-		if(request.getIn_pstm_rmtr() != null && 
+		if(request.getIn_pstm_rmtr() == null || 
 				!GenericValidate.validateDate(request.getIn_pstm_rmtr())){
 			throw new CommonException(ResponseCode.TYPE_DATA_ERROR, 
 					"order-date", ResponseCode.TYPE_DATA_ERROR_DESCRIPTION);

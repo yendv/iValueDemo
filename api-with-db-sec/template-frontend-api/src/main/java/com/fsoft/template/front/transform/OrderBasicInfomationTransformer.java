@@ -13,6 +13,7 @@ import org.springframework.util.StringUtils;
 
 import com.fsoft.template.model.OrderBasic;
 import com.fsoft.template.request.OrderBasicInfomationRequest;
+import com.fsoft.template.util.GenericValidate;
 
 /**
  * @author YenDV
@@ -20,9 +21,9 @@ import com.fsoft.template.request.OrderBasicInfomationRequest;
  */
 @MessageEndpoint
 public class OrderBasicInfomationTransformer {
-	private SimpleDateFormat df = new SimpleDateFormat("");
+	private SimpleDateFormat df = new SimpleDateFormat("MM/dd/yyyy");
 	@ServiceActivator(inputChannel = "rOrdBsPc-update-channel-2-transform" ,
-			outputChannel = "rOrdBsPc-update-channel-3-validate-storage")
+			outputChannel = "rOrdBsPc-update-channel-3-service")
 	public OrderBasic fromRequest(OrderBasicInfomationRequest request) throws ParseException{
 		OrderBasic orderBasic = new OrderBasic();
 		orderBasic.setOrdId(request.getIn_ord_id());
@@ -42,8 +43,8 @@ public class OrderBasicInfomationTransformer {
 		orderBasic.setPgApvDtm(StringUtils.isEmpty(request.getIn_pg_apv_dtm()) ? null : df.parse(request.getIn_pg_apv_dtm()));
 		orderBasic.setPgPayId(request.getIn_pg_pay_id());
 		orderBasic.setAmtPnPmtId(request.getIn_amt_pn_pmt_id() != null ? request.getIn_amt_pn_pmt_id().toString() : null);
-		orderBasic.setAmtPnOtkArrAmt(StringUtils.isEmpty(request.getIn_amt_pn_otk_arr_amt()) ? 
-				new BigDecimal(request.getIn_amt_pn_otk_arr_amt()) : null);
+		orderBasic.setAmtPnOtkArrAmt(GenericValidate.validateBigDecimal(request.getIn_amt_pn_otk_arr_amt()) ? 
+				new BigDecimal(request.getIn_amt_pn_otk_arr_amt()) : new BigDecimal(0));
 		orderBasic.setAmtPnApYn(request.getIn_amt_pn_ap_yn());
 		orderBasic.setDlvfDsnCpnId(request.getIn_dlvf_dsn_cpn_id());
 		orderBasic.setDlvfDsnCpnNo(request.getIn_dlvf_dsn_cpn_no());
@@ -51,6 +52,10 @@ public class OrderBasicInfomationTransformer {
 		orderBasic.setInstDtm(StringUtils.isEmpty(request.getIn_inst_dtm()) ? null : df.parse(request.getIn_inst_dtm()));
 		orderBasic.setMdfId(request.getIn_mdf_id());
 		orderBasic.setMdfDtm(StringUtils.isEmpty(request.getIn_mdf_dtm()) ? null : df.parse(request.getIn_mdf_dtm()));
+		orderBasic.setAmtPnOtkAmt(GenericValidate.validateBigDecimal(request.getIn_amt_pn_otk_amt()) ? 
+				new BigDecimal(request.getIn_amt_pn_otk_amt()) : new BigDecimal(0));
+		orderBasic.setAmtPnCllAmt(GenericValidate.validateBigDecimal(request.getIn_amt_pn_cll_amt()) ? 
+				new BigDecimal(request.getIn_amt_pn_cll_amt()) : new BigDecimal(0));
 		return orderBasic;
 	} 
 }
